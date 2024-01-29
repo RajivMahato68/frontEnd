@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <div class="countainer my-4">
+        <h2 class="text-center">TODOs List</h2>
+        <div class="form-group">
+          <label for="title">Title</label><br>
+          <input type="text" class="form-control" id="title">
+        </div>
+        <div class="form-group">
+          <label for="description">description</label><br>
+          <textarea class="form-control" id="description" rows="3"></textarea>
+        </div>
+        <button type="Submit" id="add" class="btn btn-primary">Add to list</button>
+        <button type="Submit" id="clear" class="btn btn-primary" onclick="clearstorage()">Clear list</button>
+        <div class="my-4" id="items">
+            </div>
+            </div>
+            <script src="table.js"></script>
+</body>
+</html>

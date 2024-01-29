@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+<style>
+    .countainer .form-group {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.countainer .btn{
+    margin-left: 100px;
+    border: 2px solid black;
+    background-color: #ee7777;
+}
+.countainer .btn:hover{
+    color: rgb(18, 70, 228);
+}
+</style>
+<!-- <script>
+    function validateform(){
+        let x = document.forms["myform"]["pname"].value;
+        if(x==""){
+            alert("Product name must be filled out");
+            return false;
+        }
+    }
+    </script> -->
+<link rel="stylesheet" href="style.css">
+<body>
+    <section id="header">
+        <a href="#"><img src="logo2.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><ion-icon name="bag-outline"></ion-icon></a></li>
+                <a href="#" id="close"><ion-icon name="close-outline" class="far"></ion-icon></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><ion-icon name="bag-outline"></ion-icon></a>
+            <i id="bar"><ion-icon name="reorder-four-outline" class="fas"></ion-icon></i>
+        </div>
+    </section>
+    <section id="page-header">
+        <h2>#StayHome & #StaySafe</h2> 
+        <p>Save more with coupons & up to 70% off!</p>
+        </div>
+    </section>
+    <form name="myform" onsubmit="return validateform()">
+    <div class="countainer my-4">
+    <div class="form-group">
+      <label for="title">Product Name</label><br>
+      <input type="text" name="pname" class="form-control" id="title"  value="Avocado" readonly>
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label><br>
+      <input type="text" name="pname" class="form-control" id="address">
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail</label><br>
+        <input type="email" name="pname" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+        <label for="number"> Mobile Number</label><br>
+        <input type="number" name="pname" class="form-control" id="number">
+    </div>
+    <div class="form-group">
+        <label for="Quantity"> Quantity</label><br>
+        <input type="number" name="pname" class="form-control" id="Quantity">
+    </div>
+    <div class="form-group">
+    <label for="country">Price</label>  
+  <input type="text" id="price" name="country"  value="300" readonly>
+</div><br>
+
+    <button type="Submit" id="add" class="btn btn-primary"  onclick="validation()">Order Now</button>
+</div>
+</form>
+</body>
+    <!-- <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>   -->
+
+     <footer class="section-p1">
+        <div class="col">
+            <img src="logo2.png" class="logo" alt="">
+            <h4>Contract</h4>
+            <p><strong>Address:</strong>Gaushala-4(Mahottari),Nepal</p>
+            <p><strong>Phone:</strong>+977 9824830624</p>
+            <p><strong>Hours:</strong>10:00-18:00,  Sun-fri</p>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icon">
+                    <i class="fab"><a href="https://www.facebook.com/profile.php?id=100071966202178" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></i> 
+                    <i class="fab"><a href="https://twitter.com/rajipmahato68" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></i> 
+                    <i class="fab"><a href="https://www.linkedin.com/in/rajiv-mahato-008b48270/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></i> 
+                    <i class="fab"><a href="https://www.youtube.com/channel/UCvjQftLE7vwrlRCnyzgJFAQ" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></i> 
+                 </div>
+            </div>
+        </div>
+         <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Tems & Conditions</a>
+            <a href="#">Contact Us</a>
+         </div>
+         <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+         </div>
+         <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or google play</p>
+            <div class="row">
+                <img src="play store/google.jpg" alt="">
+                <img src="play store/play.jpg" alt="">
+            </div>
+            <div class="payment">
+            <p>Secured Payment Gateway</p>
+            <img src="payment/esewa.jpg" alt="">
+            <img src="payment/khalati.jpg" alt="">
+         </div>
+         </div>
+         <div class="copyright">
+            <p>@ 2023, Rajiv-HTML CSS Ecommerce Template</p>
+         </div>
+     </footer>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="table.js"></script>
+    <script src="datavalidation.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+
+<body>
+    <button type="Submit" id="add" class="btn btn-primary">Add to list</button>
+    <button type="Submit" id="clear" class="btn btn-primary" onclick="clearstorage()">Clear list</button>
+    <!-- <div class="my-4" id="items"> -->
+        <h2>Your Items</h2>
+        <table class="table" border="2" width="100%">
+            <thead>
+                <tr>
+                    <th scope="col">S.No.</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Mobile Number</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price per Qty.</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Get some Coffee</td>
+                    <td>You Need Coffee As you are a coder</td>
+                    <td><button class="btn btn-primary">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</body>
+<script src="table.js"></script>
+</html>
